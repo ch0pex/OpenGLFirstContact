@@ -146,6 +146,10 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="ShaderLoader.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\FlatModel.fs" />
+    <None Include="Assets\Shaders\FlatModel.vs" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

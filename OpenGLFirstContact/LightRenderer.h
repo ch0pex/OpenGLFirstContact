@@ -17,7 +17,7 @@ public:
 	void draw(); 
 
 	void setPosition(glm::vec3 position);
-	void SetColor(glm::vec3 color);
+	void setColor(glm::vec3 color);
 	void setProgram(GLuint Program); 
 
 	glm::vec3 getPosition(); 
@@ -25,13 +25,11 @@ public:
 
 private: 
 	Camera* camera;
-	std::vector<Vertex> vertexs; 
+	std::vector<Vertex> vertices; 
 	std::vector<GLuint> indexes; 
 	
 	glm::vec3 position, color; 
-	GLuint vbo; // Vertex buffer object (geometrical information)  
-	GLuint ebo; // Element buffer object (index of each vertex) 
-	GLuint vao; // Vertex array object  (helper storing all VBOs) 
-	GLuint program; // Programa de shaders 
+	GLuint vao, vbo, ebo, program; 
 };
+
 

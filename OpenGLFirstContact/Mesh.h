@@ -14,16 +14,16 @@ struct Vertex {
 	glm::vec3 pos; 
 	glm::vec3 normal; 
 	glm::vec3 color; 
-	glm::vec2 texCords; 
+	glm::vec2 texCoords; 
 };
 
 
 class Mesh
 {
 public: 
-	static void setTriData(std::vector<Vertex>& vertexs, std::vector<uint32_t>& indexs); 
-	static void setQuadData(std::vector<Vertex>& vertexs, std::vector<uint32_t>& indexs); 
-	static void setCubeData(std::vector<Vertex>& vertexs, std::vector<uint32_t>& indexs); 
-	static void setSphereData(std::vector<Vertex>& vertexs, std::vector<uint32_t>& indexs); 
+	static void setTriData(std::vector<Vertex>& vertices, std::vector<uint32_t>& indices);
+	static void setQuadData(std::vector<Vertex>& vertices, std::vector<uint32_t>& indices);
+	static void setCubeData(std::vector<Vertex>& vertices, std::vector<uint32_t>& indices);
+	static void setSphereData(std::vector<Vertex>& vertices, std::vector<uint32_t>& indices);
 };
 

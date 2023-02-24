@@ -45,4 +45,8 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\FlatModel.vs" />
+    <None Include="Assets\Shaders\FlatModel.fs" />
+  </ItemGroup>
 </Project>
