@@ -15,7 +15,7 @@ public:
 
 	void setPosition(glm::vec3 _position); 
 	void setScale(glm::vec3 _scale); 
-	void setRotation(glm::vec3 _rotation); 
+	//void setRotation(glm::vec3 _rotation); 
 	void setProgram(GLuint _program);
 	void setTexture(GLuint _texture); 
 

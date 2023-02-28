@@ -5,10 +5,10 @@
 class ShaderLoader
 {
 private: 
-	std::string readShader(const char* filename); 
-	GLuint createShader(GLenum shaderType, std::string& source, const char* shaderName);
+	static std::string readShader(const char* filename); 
+	static GLuint createShader(GLenum shaderType, std::string& source, const char* shaderName);
 
 public: 
-	GLuint CreateProgram(const char* vertexShaderFilename, const char* fragmentShaderFilename);
+	static GLuint CreateProgram(const char* vertexShaderFilename, const char* fragmentShaderFilename);
 };
 

@@ -69,7 +69,6 @@ void LightRenderer::draw() {
 	glBindVertexArray(vao); 
 	glDrawElements(GL_TRIANGLES, indexes.size(), GL_UNSIGNED_INT, 0); 
 	glBindVertexArray(0);
-	glUseProgram(0);
 }
 
 void LightRenderer::setPosition(glm::vec3 _position) {

@@ -4,7 +4,6 @@
 #include "Dependencies/glm/glm/gtc/type_ptr.hpp"
 
 #include "Mesh.h"
-#include "ShaderLoader.h"
 #include "Camera.h"
 
 

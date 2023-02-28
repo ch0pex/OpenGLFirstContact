@@ -4,8 +4,6 @@
 class TextureLoader
 {
 public: 
-	TextureLoader(); 
-	~TextureLoader(); 
-	GLuint getTextureID(std::string texFileName); 
+	static GLuint getTextureID(std::string texFileName); 
 };
 
