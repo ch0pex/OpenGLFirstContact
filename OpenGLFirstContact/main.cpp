@@ -11,7 +11,7 @@ LightRenderer* light;
 
 
 void initGame() {
-	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_DEPTH_TEST); 
 	ShaderLoader shaderLoader; 
 	GLuint shaderProgram = shaderLoader.CreateProgram("Assets/Shaders/FlatModel.vs", "Assets/Shaders/FlatModel.fs"); 
 	camera = new Camera(45.0f, 800, 600, 0.1f, 100.f, glm::vec3(0.0f, 4.0f, 6.0f));
@@ -43,8 +43,8 @@ int main(int argc, char** argv)
 
 	while (!glfwWindowShouldClose(window))
 	{
+		
 		renderScene(); 
-
 		glfwSwapBuffers(window); 
 		glfwPollEvents(); 
 	}

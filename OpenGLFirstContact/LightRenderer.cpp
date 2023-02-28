@@ -32,7 +32,7 @@ LightRenderer::LightRenderer(MeshType meshType, Camera* camera) {
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*) 0);
 	//Enable vertex attribute for vertex color 
 	glEnableVertexAttribArray(1); 
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)(offsetof(Vertex, Vertex::color)));
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)(offsetof(Vertex, Vertex::normal)));
 
 	// EBO (index of each vertex) 
 	glGenBuffers(1, &ebo);  // GEN BUFFER (ebo will have the id)  
@@ -68,7 +68,8 @@ void LightRenderer::draw() {
 	//Draw the object
 	glBindVertexArray(vao); 
 	glDrawElements(GL_TRIANGLES, indexes.size(), GL_UNSIGNED_INT, 0); 
-
+	glBindVertexArray(0);
+	glUseProgram(0);
 }
 
 void LightRenderer::setPosition(glm::vec3 _position) {
